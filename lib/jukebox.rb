@@ -15,10 +15,10 @@ def list(songs)
   end
 end
 
-def get_song(input,songs)
-  songs.find do |track|
-    track.start_with?(input) || input.to_i - 1 == songs.index(track)
-  end
+def list(songs)
+  songs.each_with_index { |song, index|
+    puts (index + 1).to_s + ". " + song
+    }
 end
 
 def play(songs)
