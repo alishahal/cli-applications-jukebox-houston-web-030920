@@ -43,10 +43,9 @@ def run(songs)
   help
   puts "Please enter a command:"
   user_response = gets.chomp
-   While user_response!="exit" do
+   While user_response!="exit" 
     case user_response
-      when "exit"
-        exit_jukebox
+  
       when "help"
         help
         puts "Please enter a command:"
@@ -64,4 +63,6 @@ def run(songs)
         puts "Invalid input, please try again"
         user_response = gets.chomp
     end
+ end
+ exit_jukebox
 end 
