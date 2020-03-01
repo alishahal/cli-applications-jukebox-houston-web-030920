@@ -9,11 +9,6 @@ def help
 end
   
 
-def list(songs)
-  songs.each_with_index do |track, i|
-    puts "#{i+1}. #{track}"
-  end
-end
 
 def list(songs)
   songs.each_with_index { |song, index|
