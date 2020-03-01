@@ -45,6 +45,8 @@ def run(songs)
   user_response = gets.chomp
    
     case user_response
+      when "exit"
+        exit_jukebox
       when "help"
         help
         puts "Please enter a command:"
@@ -57,8 +59,7 @@ def run(songs)
         play(songs)
         puts "Please enter a command:"
         user_response = gets.chomp
-      when "exit"
-        exit_jukebox
+      
       else
         puts "Invalid input, please try again"
         user_response = gets.chomp
