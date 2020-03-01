@@ -59,7 +59,6 @@ def run(songs)
         user_response = gets.chomp
       when "exit"
         exit_jukebox
-        puts "Jukebox is Shutting down"
       else
         puts "Invalid input, please try again"
         user_response = gets.chomp
